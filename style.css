@@ -1,0 +1,31 @@
+body {
+    background-color: #081f33;
+    font-size: 72px;
+    text-align: center;
+}
+.flex-container {
+    border: 5px solid lightcoral;
+    width: 25%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: center;
+    gap:10px;
+    padding: 0px 10px 0px 10px;
+}
+.items {
+    border: 1px solid black;
+    width: 100px;
+    background-color: lightseagreen;
+
+}
+.one {
+    height: 500px;
+}
+.two {
+    height:400px;
+}
+.three {
+    height:300px;
+}
