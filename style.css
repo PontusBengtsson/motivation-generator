@@ -1,49 +1,94 @@
 body {
-    color: white;
-    background-color: #16111A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
+  margin: 0;
+  height: 100vh;
+  color: white;
+  background-color: #16111A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  gap: 8vh;
 }
+
 .Container {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-background-color: #2D2039;
-gap: 10px;
-width: 22%;
-padding: 50px;
-margin: 100px;
-border-radius: 50px;
-position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2D2039;
+  width: 80%;
+  max-width: 400px;
+  padding: 4vh;
+  border-radius: 50px;
+  height: 35%;
+  max-height: 400px;
+  position: relative;
+  gap: 2vh;
+}
+
+.Container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2D2039;
+  gap: 4vh;
+  width: 80%;
+  padding: 1vh;
+  position: relative;
 }
 
 #Advice {
-    color: #A638F6;
-    
+  color: #A638F6;
+  font-size: 2vh;
 }
 
 #Text {
-    font-size: 28px;
+  font-size: 2.5vh;
+  text-align: center;
+}
+
+.LineContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 #Line {
-    color: white;
+  width: 90%;
+  height: auto;
 }
 
 #Group_1061 {
-    background-color: #A638F6;
-    padding: 30px;
-    border-radius: 50%;
-    position: absolute;
-    top:470px;
-    
+  background-color: #A638F6;
+  padding: 4vh;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -5vh;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
-#Group_1061 :hover {
-background-color: gray;
+#Group_1061:hover {
+  background-color: gray;
+  transform: scale(1.1);
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .logo {
+    width: 100px;
+    
+  }
+  .Container {
+    width:250px
+  }
+ 
 }
